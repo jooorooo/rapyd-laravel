@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=7",
-        "illuminate/support": "~5.*",
-        "laravelcollective/html": "~5.*",
+        "illuminate/support": ">=5.*",
+        "laravelcollective/html": ">=5.*",
         "intervention/image": "2.*"
     },
     "suggest": {
