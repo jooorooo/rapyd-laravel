@@ -1,20 +1,19 @@
 {
-    "name": "zofe/rapyd",
+    "name": "simexis/rapyd",
     "description": "crud widgets for laravel, to make an admin in few lines of code",
-    "homepage": "https://github.com/zofe/rapyd-laravel",
+    "homepage": "https://github.com/simexis/rapyd-laravel",
     "keywords": ["laravel", "crud", "rapyd", "administrator", "admin", "backend", "datatable", "form"],
     "authors": [
         {
-            "name": "zofe",
+            "name": "simexis",
             "email": "felice.ostuni@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "~5.0",
-        "laravelcollective/html": "~5.0",
-        "intervention/image": "2.*",
-        "zofe/burp": "2.*"
+        "php": ">=7",
+        "illuminate/support": "~5.*",
+        "laravelcollective/html": "~5.*",
+        "intervention/image": "2.*"
     },
     "suggest": {
         "baum/baum": "Allows to use the DataTree widget"
@@ -24,7 +23,7 @@
             "migrations"
         ],
         "psr-4": {
-            "Zofe\\Rapyd\\": "src/"
+            "Simexis\\Rapyd\\": "src/"
         }
     }
 }
