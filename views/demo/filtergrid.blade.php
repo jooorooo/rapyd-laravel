@@ -11,7 +11,7 @@
     <p>
         {!! $filter !!}
         {!! $grid !!}
-        {!! Documenter::showMethod("Zofe\\Rapyd\\Demo\\DemoController", "getFilter") !!}
+        {!! Documenter::showMethod("Simexis\\Rapyd\\Demo\\DemoController", "getFilter") !!}
         {!! Documenter::showCode("zofe/rapyd/views/demo/filtergrid.blade.php") !!}
     </p>
 

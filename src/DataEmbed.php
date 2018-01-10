@@ -1,9 +1,9 @@
-<?php namespace Zofe\Rapyd;
+<?php namespace Simexis\Rapyd;
 
 
 /**
  * Class DataEmbed
- * @package Zofe\Rapyd
+ * @package Simexis\Rapyd
  */
 class DataEmbed
 {

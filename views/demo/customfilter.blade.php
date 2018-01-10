@@ -68,8 +68,8 @@
         </div>
     </div>
 
-    {!! Documenter::showMethod("Zofe\\Rapyd\\Demo\\DemoController", "getCustomfilter") !!}
-    {!! Documenter::showMethod("Zofe\\Rapyd\\Demo\\Article", "scopeFreesearch") !!}
+    {!! Documenter::showMethod("Simexis\\Rapyd\\Demo\\DemoController", "getCustomfilter") !!}
+    {!! Documenter::showMethod("Simexis\\Rapyd\\Demo\\Article", "scopeFreesearch") !!}
     {!! Documenter::showCode("zofe/rapyd/views/demo/customfilter.blade.php") !!}
 
 @stop

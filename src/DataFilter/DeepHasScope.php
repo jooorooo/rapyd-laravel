@@ -1,6 +1,6 @@
 <?php
 
-namespace Zofe\Rapyd\DataFilter;
+namespace Simexis\Rapyd\DataFilter;
 
 trait DeepHasScope {
 

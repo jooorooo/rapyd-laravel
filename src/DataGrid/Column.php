@@ -1,6 +1,6 @@
-<?php namespace Zofe\Rapyd\DataGrid;
+<?php namespace Simexis\Rapyd\DataGrid;
 
-use Zofe\Rapyd\Helpers\HTML;
+use Simexis\Rapyd\Helpers\HTML;
 
 class Column
 {

@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    {!! Documenter::showMethod("Zofe\\Rapyd\\Demo\\DemoController", "getSet") !!}
+    {!! Documenter::showMethod("Simexis\\Rapyd\\Demo\\DemoController", "getSet") !!}
     {!! Documenter::showCode("zofe/rapyd/views/demo/set.blade.php") !!}
 
 @stop

@@ -1,8 +1,8 @@
-<?php namespace Zofe\Rapyd\DataGrid;
+<?php namespace Simexis\Rapyd\DataGrid;
 
 use Illuminate\Support\Facades\View;
-use Zofe\Rapyd\DataSet as DataSet;
-use Zofe\Rapyd\Persistence;
+use Simexis\Rapyd\DataSet as DataSet;
+use Simexis\Rapyd\Persistence;
 use Illuminate\Support\Facades\Config;
 
 class DataGrid extends DataSet

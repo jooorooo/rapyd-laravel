@@ -1,10 +1,10 @@
 <?php
 
-namespace Zofe\Rapyd\DataForm\Field;
+namespace Simexis\Rapyd\DataForm\Field;
 
 use Collective\Html\FormFacade as Form;
 use Illuminate\Support\Facades\Input;
-use Zofe\Rapyd\Rapyd;
+use Simexis\Rapyd\Rapyd;
 
 class Daterange extends Date
 {

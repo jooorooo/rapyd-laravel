@@ -1,4 +1,4 @@
-<?php namespace Zofe\Rapyd;
+<?php namespace Simexis\Rapyd;
 
 use Collective\Html\FormBuilder;
 use Collective\Html\HtmlBuilder;
@@ -52,7 +52,7 @@ class RapydServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register('Collective\Html\HtmlServiceProvider');
-        $this->app->register('Zofe\Burp\BurpServiceProvider');
+        $this->app->register('Simexis\Burp\BurpServiceProvider');
         
         Rapyd::setContainer($this->app);
    
@@ -61,17 +61,17 @@ class RapydServiceProvider extends ServiceProvider
 
             $loader->alias('Input', 'Illuminate\Support\Facades\Input');
             
-            $loader->alias('Rapyd'     , 'Zofe\Rapyd\Facades\Rapyd'     );
+            $loader->alias('Rapyd'     , 'Simexis\Rapyd\Facades\Rapyd'     );
             
             //deprecated .. and more facade are really needed ?
-            $loader->alias('DataSet'   , 'Zofe\Rapyd\Facades\DataSet'   );
-            $loader->alias('DataGrid'  , 'Zofe\Rapyd\Facades\DataGrid'  );
-            $loader->alias('DataForm'  , 'Zofe\Rapyd\Facades\DataForm'  );
-            $loader->alias('DataEdit'  , 'Zofe\Rapyd\Facades\DataEdit'  );
-            $loader->alias('DataFilter', 'Zofe\Rapyd\Facades\DataFilter');
-            $loader->alias('DataEmbed' , 'Zofe\Rapyd\Facades\DataEmbed');
-            $loader->alias('DataTree' , 'Zofe\Rapyd\Facades\DataTree');
-            $loader->alias('Documenter', 'Zofe\Rapyd\Facades\Documenter');
+            $loader->alias('DataSet'   , 'Simexis\Rapyd\Facades\DataSet'   );
+            $loader->alias('DataGrid'  , 'Simexis\Rapyd\Facades\DataGrid'  );
+            $loader->alias('DataForm'  , 'Simexis\Rapyd\Facades\DataForm'  );
+            $loader->alias('DataEdit'  , 'Simexis\Rapyd\Facades\DataEdit'  );
+            $loader->alias('DataFilter', 'Simexis\Rapyd\Facades\DataFilter');
+            $loader->alias('DataEmbed' , 'Simexis\Rapyd\Facades\DataEmbed');
+            $loader->alias('DataTree' , 'Simexis\Rapyd\Facades\DataTree');
+            $loader->alias('Documenter', 'Simexis\Rapyd\Facades\Documenter');
 
 
         });

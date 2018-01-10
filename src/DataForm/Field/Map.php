@@ -1,6 +1,6 @@
 <?php
 
-namespace Zofe\Rapyd\DataForm\Field;
+namespace Simexis\Rapyd\DataForm\Field;
 
 use Collective\Html\FormFacade as Form;
 

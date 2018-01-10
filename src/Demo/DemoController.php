@@ -1,4 +1,4 @@
-<?php namespace Zofe\Rapyd\Demo;
+<?php namespace Simexis\Rapyd\Demo;
 
 
 use Illuminate\Routing\Controller;

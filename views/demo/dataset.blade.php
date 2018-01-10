@@ -15,7 +15,7 @@
     <br />
     <a href="{!! $dataset->orderbyLink('nome', 'desc') !!}">sort a-z</a>  |  <a href="{!! $dataset->orderbyLink('nome', 'asc') !!}">sort z-a</a>
 
-    {!! Documenter::showMethod("Zofe\\Rapyd\\Demo\\DemoController", "getSet") !!}
+    {!! Documenter::showMethod("Simexis\\Rapyd\\Demo\\DemoController", "getSet") !!}
     {!! Documentor::showCode("zofe/rapyd/views/rapyd/dataset.blade.php") !!}
 </p>
 @stop

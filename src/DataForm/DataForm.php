@@ -1,32 +1,32 @@
 <?php
 
-namespace Zofe\Rapyd\DataForm;
+namespace Simexis\Rapyd\DataForm;
 
 use Illuminate\Database\Eloquent\Model;
-use Zofe\Rapyd\DataForm\Field\Auto;
-use Zofe\Rapyd\DataForm\Field\Autocomplete;
-use Zofe\Rapyd\DataForm\Field\Colorpicker;
-use Zofe\Rapyd\DataForm\Field\Date;
-use Zofe\Rapyd\DataForm\Field\Field;
-use Zofe\Rapyd\DataForm\Field\File;
-use Zofe\Rapyd\DataForm\Field\Hidden;
-use Zofe\Rapyd\DataForm\Field\Password;
-use Zofe\Rapyd\DataForm\Field\Radiogroup;
-use Zofe\Rapyd\DataForm\Field\Redactor;
-use Zofe\Rapyd\DataForm\Field\Select;
-use Zofe\Rapyd\DataForm\Field\Tags;
-use Zofe\Rapyd\DataForm\Field\Number;
-use Zofe\Rapyd\DataForm\Field\Numberrange;
-use Zofe\Rapyd\DataForm\Field\Text;
-use Zofe\Rapyd\DataForm\Field\Textarea;
-use Zofe\Rapyd\Widget;
+use Simexis\Rapyd\DataForm\Field\Auto;
+use Simexis\Rapyd\DataForm\Field\Autocomplete;
+use Simexis\Rapyd\DataForm\Field\Colorpicker;
+use Simexis\Rapyd\DataForm\Field\Date;
+use Simexis\Rapyd\DataForm\Field\Field;
+use Simexis\Rapyd\DataForm\Field\File;
+use Simexis\Rapyd\DataForm\Field\Hidden;
+use Simexis\Rapyd\DataForm\Field\Password;
+use Simexis\Rapyd\DataForm\Field\Radiogroup;
+use Simexis\Rapyd\DataForm\Field\Redactor;
+use Simexis\Rapyd\DataForm\Field\Select;
+use Simexis\Rapyd\DataForm\Field\Tags;
+use Simexis\Rapyd\DataForm\Field\Number;
+use Simexis\Rapyd\DataForm\Field\Numberrange;
+use Simexis\Rapyd\DataForm\Field\Text;
+use Simexis\Rapyd\DataForm\Field\Textarea;
+use Simexis\Rapyd\Widget;
 use Collective\Html\FormFacade as Form;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
-use Zofe\Rapyd\Rapyd;
+use Simexis\Rapyd\Rapyd;
 
 /**
  * Class DataForm
@@ -63,7 +63,7 @@ use Zofe\Rapyd\Rapyd;
  * @method Date         addDate        (string $name, string $label, string $validation = '')
  * @method Auto         addAuto        (string $name, string $label, string $validation = '')
  *
- * @package Zofe\Rapyd\DataForm
+ * @package Simexis\Rapyd\DataForm
  */
 class DataForm extends Widget
 {
@@ -112,7 +112,7 @@ class DataForm extends Widget
         if (strpos($type, "\\") !== false) {
             $field_class = $type;
         } else {
-            $field_class = '\Zofe\Rapyd\DataForm\Field\\' .  ucfirst($type);
+            $field_class = '\Simexis\Rapyd\DataForm\Field\\' .  ucfirst($type);
         }
 
         //instancing
@@ -209,7 +209,7 @@ class DataForm extends Widget
      * get field instance from fields array
      * @param string $field_name
      * @param array $attributes
-     * @return \Zofe\Rapyd\DataForm\Field $field
+     * @return \Simexis\Rapyd\DataForm\Field $field
      */
     public function field($field_name, array $attributes = array())
     {
@@ -675,7 +675,7 @@ class DataForm extends Widget
             $name = substr($name, 3);
         }
 
-        $classname = '\Zofe\Rapyd\DataForm\Field\\'.ucfirst($name);
+        $classname = '\Simexis\Rapyd\DataForm\Field\\'.ucfirst($name);
 
         if (class_exists($classname)) {
             array_push($arguments, $name);

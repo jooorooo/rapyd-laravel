@@ -1,9 +1,9 @@
 <?php
 
-namespace Zofe\Rapyd\DataForm\Field;
+namespace Simexis\Rapyd\DataForm\Field;
 
 use Collective\Html\FormFacade as Form;
-use Zofe\Rapyd\Rapyd;
+use Simexis\Rapyd\Rapyd;
 
 class Date extends Field
 {

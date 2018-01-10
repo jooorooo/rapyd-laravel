@@ -1,4 +1,4 @@
-<?php namespace Zofe\Rapyd\Helpers;
+<?php namespace Simexis\Rapyd\Helpers;
 
 class HTML
 {
